@@ -18,8 +18,9 @@ final class RomanNumeralConverter
         }
 
         if($arabicNumber >= 500) {
-            $result .= 'D';
-            $arabicNumber = $arabicNumber - 500;
+            $repetition = intdiv($arabicNumber, 500);
+            $result .= str_repeat('D', $repetition);
+            $arabicNumber = $arabicNumber - 500 * $repetition;
         }
 
         if($arabicNumber >= 100) {
