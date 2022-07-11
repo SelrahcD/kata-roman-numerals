@@ -36,7 +36,6 @@ final class RomanNumeralConverter
             $arabicNumber = $arabicNumber - 10;
         }
 
-        var_dump($arabicNumber);
         if($arabicNumber >= 5 && $arabicNumber < 10) {
             $result .= 'V';
             $arabicNumber = $arabicNumber - 5;
