@@ -61,7 +61,6 @@ final class RomanNumeralConverter
         $arabicToRoman = self::ARABIC_TO_ROMAN;
         asort($arabicToRoman);
 
-        $previousDivision = key($arabicToRoman);
         foreach ($arabicToRoman as $arabic => $roman) {
             if($currentDivision === $arabic) {
                 return $previousDivision;
