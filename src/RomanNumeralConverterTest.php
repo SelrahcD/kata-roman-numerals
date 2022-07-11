@@ -97,7 +97,7 @@ final class RomanNumeralConverterTest extends TestCase
      * @test
      */
     public function convert_51_to_LI(): void {
-        $this->assertEquals('L', (new RomanNumeralConverter)->toRomanNumerals(50));
+        $this->assertEquals('LI', (new RomanNumeralConverter)->toRomanNumerals(51));
     }
 
     /**

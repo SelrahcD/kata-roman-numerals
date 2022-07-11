@@ -28,7 +28,7 @@ final class RomanNumeralConverter
 
         if($arabicNumber >= 50) {
             $result .= 'L';
-            return $result;
+            $arabicNumber = $arabicNumber - 50;
         }
 
         if($arabicNumber >= 10) {
