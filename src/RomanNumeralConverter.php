@@ -15,7 +15,9 @@ final class RomanNumeralConverter
         $result = '';
 
         foreach (self::ARABIC_TO_ROMAN AS $arabic => $numeral) {
-            
+            $repetition = intdiv($arabicNumber, $arabic);
+            $result .= str_repeat($numeral, $repetition);
+            $arabicNumber = $arabicNumber - 1000 * $repetition;
         }
 
         if($arabicNumber >= 1000) {
