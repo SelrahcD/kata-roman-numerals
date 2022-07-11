@@ -33,6 +33,10 @@ final class RomanNumeralConverter
             return 'V';
         }
 
+        if($arabicNumber == 6) {
+            return 'VI';
+        }
+
         return str_repeat('I', $arabicNumber);
     }
 }
