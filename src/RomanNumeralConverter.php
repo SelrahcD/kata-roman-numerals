@@ -8,6 +8,7 @@ final class RomanNumeralConverter
 {
     const ARABIC_TO_ROMAN = [
         1000 => 'M',
+        900 => 'CM',
         500 => 'D',
         400 => 'CD',
         100 => 'C',
