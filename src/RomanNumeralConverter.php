@@ -40,11 +40,7 @@ final class RomanNumeralConverter
             $result .= 'V';
             $arabicNumber = $arabicNumber - 5;
         }
-
-        if($arabicNumber == 6) {
-            $result .= 'VI';
-            return $result;
-        }
+        
 
         $result .= str_repeat('I', $arabicNumber);
         return $result;
