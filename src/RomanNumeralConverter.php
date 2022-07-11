@@ -23,6 +23,7 @@ final class RomanNumeralConverter
         foreach (self::ARABIC_TO_ROMAN AS $arabic => $numeral) {
 
             if($arabicNumber >= 4 && $arabicNumber < 5) {
+                echo $this->smallerDivision($arabicNumber);
                 $arabicNumber = $arabicNumber - 4;
                 $result .= 'IV';
             }
