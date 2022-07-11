@@ -43,4 +43,11 @@ final class RomanNumeralConverterTest extends TestCase
     public function convert_10_to_X(): void {
         $this->assertEquals('X', (new RomanNumeralConverter)->toRomanNumerals(10));
     }
+
+    /**
+     * @test
+     */
+    public function convert_50_to_L(): void {
+        $this->assertEquals('X', (new RomanNumeralConverter)->toRomanNumerals(10));
+    }
 }
