@@ -21,7 +21,7 @@ final class RomanNumeralConverter
         $result = '';
 
         foreach (self::ARABIC_TO_ROMAN AS $arabic => $numeral) {
-
+            
             if($arabicNumber == 4) {
                 return 'IV';
             }
