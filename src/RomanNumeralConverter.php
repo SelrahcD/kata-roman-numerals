@@ -54,4 +54,15 @@ final class RomanNumeralConverter
         
         return $result;
     }
+
+    private function smallerDivision(int $currentDivision): int
+    {
+        foreach (self::ARABIC_TO_ROMAN as $arabic => $roman) {
+            if($currentDivision === $arabic) {
+                return $previousDivision;
+            }
+
+            $previousDivision = $arabic;
+        }
+    }
 }
