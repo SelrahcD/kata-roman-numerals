@@ -20,6 +20,8 @@ final class RomanNumeralConverter
     {
         $result = '';
 
+        $previousRomanNumeral = null;
+        $previousArabicNumber = null;
         foreach (self::ARABIC_TO_ROMAN AS $arabic => $numeral) {
             
             if($arabicNumber >= 4 && $arabicNumber < 5) {
