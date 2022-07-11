@@ -12,6 +12,7 @@ final class RomanNumeralConverter
         100 => 'C',
         50 => 'L',
         10 => 'X',
+        9 => 'IX',
         5 => 'V',
         4 => 'IV',
         1 => 'I',
@@ -22,13 +23,8 @@ final class RomanNumeralConverter
         $result = '';
 
         foreach (self::ARABIC_TO_ROMAN AS $arabic => $numeral) {
-            
 
-            if ($arabicNumber >= 9 && $arabicNumber < 10) { // 10 1 -> 10 % 9 => 1 && 10 - 9 = 1
-                $arabicNumber = $arabicNumber - 9;
-                $result .= 'IX';
-            }
-            elseif ($arabicNumber >= 40 && $arabicNumber < 50) { // 50 10 -> 50 % 40 -> 10 && 50 - 10 = 40
+if ($arabicNumber >= 40 && $arabicNumber < 50) { // 50 10 -> 50 % 40 -> 10 && 50 - 10 = 40
                 $arabicNumber = $arabicNumber - 40;
                 $result .= 'XL';
             }
