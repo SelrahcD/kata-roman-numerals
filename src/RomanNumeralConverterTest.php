@@ -40,7 +40,7 @@ final class RomanNumeralConverterTest extends TestCase
     /**
      * @test
      */
-    public function convert_6_to_V(): void {
+    public function convert_6_to_VI(): void {
         $this->assertEquals('V', (new RomanNumeralConverter)->toRomanNumerals(5));
     }
 
