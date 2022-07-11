@@ -27,6 +27,6 @@ final class RomanNumeralConverterTest extends TestCase
      * @test
      */
     public function convert_3_to_III(): void {
-        $this->assertEquals('II', (new RomanNumeralConverter)->toRomanNumerals(2));
+        $this->assertEquals('III', (new RomanNumeralConverter)->toRomanNumerals(3));
     }
 }
