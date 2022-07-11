@@ -27,10 +27,7 @@ final class RomanNumeralConverter
         foreach (self::ARABIC_TO_ROMAN AS $arabic => $numeral) {
 
 
-            if ($arabicNumber >= 90 && $arabicNumber < 100) { // 100 10 -> 100 % 90 -> 10 && 100 - 90 = 10
-                $arabicNumber = $arabicNumber - 90;
-                $result .= 'XC';
-            }
+     
             if ($arabicNumber >= 400 && $arabicNumber < 500) { // 500 100 -> 500 % 400 -> 100 && 500 - 400 = 100
                 $arabicNumber = $arabicNumber - 400;
                 $result .= 'CD';
