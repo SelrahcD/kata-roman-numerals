@@ -29,8 +29,10 @@ final class RomanNumeralConverter
             return 'X';
         }
 
+        $result = '';
         if($arabicNumber == 5) {
-            return 'V';
+            $result .= 'V';
+            return $result;
         }
 
         if($arabicNumber == 6) {
