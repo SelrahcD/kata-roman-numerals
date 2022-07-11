@@ -33,7 +33,7 @@ final class RomanNumeralConverter
 
         if($arabicNumber == 10) {
             $result .= 'X';
-            return $result;
+            $arabicNumber = $arabicNumber - 10;
         }
 
         if($arabicNumber >= 5 && $arabicNumber < 10) {
