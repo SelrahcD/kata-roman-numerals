@@ -164,12 +164,18 @@ final class RomanNumeralConverterTest extends TestCase
 
     /**
      * @test
+     * @dataProvider numbers
      * @param string $roman
      * @param int $arabicNumber
      * @return void
      */
-    private function converts_from_arabic_numbers_to_roman_numeral(string $roman, int $arabicNumber): void
+    public function converts_from_arabic_numbers_to_roman_numeral(string $roman, int $arabicNumber): void
     {
         $this->assertEquals($roman, (new RomanNumeralConverter)->toRomanNumerals($arabicNumber));
+    }
+
+    public function numbers()
+    {
+        return;
     }
 }
