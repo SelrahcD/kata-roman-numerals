@@ -131,6 +131,13 @@ final class RomanNumeralConverterTest extends TestCase
     /**
      * @test
      */
+    public function convert_600_to_D(): void {
+        $this->assertEquals('DC', (new RomanNumeralConverter)->toRomanNumerals(600));
+    }
+
+    /**
+     * @test
+     */
     public function convert_1000_to_M(): void {
         $this->assertEquals('M', (new RomanNumeralConverter)->toRomanNumerals(1000));
     }
