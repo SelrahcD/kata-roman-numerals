@@ -8,7 +8,7 @@ final class RomanNumeralConverter
 {
     const ARABIC_TO_ROMAN = [
         1000 => 'M',
-        1000 => 'M',
+        500 => 'D',
     ];
 
     public function toRomanNumerals(int $arabicNumber)
@@ -18,9 +18,8 @@ final class RomanNumeralConverter
         foreach (self::ARABIC_TO_ROMAN AS $arabic => $numeral) {
             $repetition = intdiv($arabicNumber, $arabic);
             $result .= str_repeat($numeral, $repetition);
-            $arabicNumber = $arabicNumber - 1000 * $repetition;
+            $arabicNumber = $arabicNumber - $arabic * $repetition;
         }
-        
 
         if($arabicNumber >= 500) {
             $repetition = intdiv($arabicNumber, 500);
