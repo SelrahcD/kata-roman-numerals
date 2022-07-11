@@ -9,6 +9,7 @@ final class RomanNumeralConverter
     const ARABIC_TO_ROMAN = [
         1000 => 'M',
         500 => 'D',
+        100 => 'C',
     ];
 
     public function toRomanNumerals(int $arabicNumber)
