@@ -27,6 +27,7 @@ final class RomanNumeralConverterTest extends TestCase
             "V <=> 5" => ['V', 5],
             "VI <=> 6" => ['VI', 6],
             "VII <=> 7" => ['VII', 7],
+            "IX <=> 9" => ['IX', 9],
             "X <=> 10" => ['X', 10],
             "XI <=> 11" => ['XI', 11],
             "XX <=> 20" => ['XX', 20],

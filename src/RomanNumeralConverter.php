@@ -21,6 +21,9 @@ final class RomanNumeralConverter
         if($arabicNumber === 4) {
             return 'IV';
         }
+        elseif ($arabicNumber === 9) {
+            return 'IX';
+        }
         
         $result = '';
 
