@@ -38,7 +38,7 @@ final class RomanNumeralConverter
                 $arabicNumber = $arabicNumber - 90;
                 $result .= 'XC';
             }
-            elseif ($arabicNumber === 400) {
+            elseif ($arabicNumber >= 400 && $arabicNumber < 500) {
                 $arabicNumber = $arabicNumber - 400;
                 $result .= 'CD';
             }
