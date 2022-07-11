@@ -117,6 +117,13 @@ final class RomanNumeralConverterTest extends TestCase
     /**
      * @test
      */
+    public function convert_115_to_C(): void {
+        $this->assertEquals('CXV', (new RomanNumeralConverter)->toRomanNumerals(115));
+    }
+
+    /**
+     * @test
+     */
     public function convert_500_to_D(): void {
         $this->assertEquals('D', (new RomanNumeralConverter)->toRomanNumerals(500));
     }

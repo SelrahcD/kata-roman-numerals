@@ -23,7 +23,7 @@ final class RomanNumeralConverter
 
         if($arabicNumber >= 100) {
             $result .= 'C';
-            return $result;
+            $arabicNumber = $arabicNumber - 100;
         }
 
         if($arabicNumber >= 50) {
