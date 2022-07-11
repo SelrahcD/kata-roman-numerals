@@ -14,6 +14,7 @@ final class RomanNumeralConverter
             return 'V';
         }
 
+        return str_repeat('I', $arabicNumber);
         if($arabicNumber == 3) {
             return 'III';
         }
