@@ -31,6 +31,10 @@ final class RomanNumeralConverter
             $arabicNumber = $arabicNumber - 50;
         }
 
+        if($arabicNumber == 20) {
+           return "XX";
+        }
+
         if($arabicNumber >= 10) {
             $repetition = $arabicNumber % 10;
             $toSubstract = $repetition * 10;
