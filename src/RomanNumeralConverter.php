@@ -47,6 +47,12 @@ final class RomanNumeralConverter
             $arabicNumber = $arabicNumber - 5 * $repetition;
         }
 
+        if($arabicNumber >= 1) {
+            $repetition = intdiv($arabicNumber, 1);
+            $result .= str_repeat('I', $repetition);
+            $arabicNumber = $arabicNumber - 1 * $repetition;
+        }
+
         $result .= str_repeat('I', $arabicNumber);
         return $result;
     }
