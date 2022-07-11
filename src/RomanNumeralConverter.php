@@ -22,8 +22,9 @@ final class RomanNumeralConverter
         }
 
         if($arabicNumber >= 100) {
-            $result .= 'C';
-            $arabicNumber = $arabicNumber - 100;
+            $repetition = intdiv($arabicNumber, 100);
+            $result .= str_repeat('C', $repetition);
+            $arabicNumber = $arabicNumber - 100 * $repetition;
         }
 
         if($arabicNumber >= 50) {
