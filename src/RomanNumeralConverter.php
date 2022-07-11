@@ -9,6 +9,7 @@ final class RomanNumeralConverter
     const ARABIC_TO_ROMAN = [
         1000 => 'M',
         500 => 'D',
+        400 => 'CD',
         100 => 'C',
         90 => 'XC',
         50 => 'L',
@@ -27,12 +28,9 @@ final class RomanNumeralConverter
         foreach (self::ARABIC_TO_ROMAN AS $arabic => $numeral) {
 
 
-     
-            if ($arabicNumber >= 400 && $arabicNumber < 500) { // 500 100 -> 500 % 400 -> 100 && 500 - 400 = 100
-                $arabicNumber = $arabicNumber - 400;
-                $result .= 'CD';
-            }
-            elseif ($arabicNumber >= 900 && $arabicNumber < 1000) { // 1000 100 -> 1000 % 900 -> 100 && 1000 - 900 = 100
+
+
+            if ($arabicNumber >= 900 && $arabicNumber < 1000) { // 1000 100 -> 1000 % 900 -> 100 && 1000 - 900 = 100
                 $arabicNumber = $arabicNumber - 900;
                 $result .= 'CM';
             }
