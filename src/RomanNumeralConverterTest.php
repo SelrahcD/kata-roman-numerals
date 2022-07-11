@@ -103,6 +103,13 @@ final class RomanNumeralConverterTest extends TestCase
     /**
      * @test
      */
+    public function convert_60_to_LX(): void {
+        $this->assertEquals('LX', (new RomanNumeralConverter)->toRomanNumerals(60));
+    }
+
+    /**
+     * @test
+     */
     public function convert_100_to_C(): void {
         $this->assertEquals('C', (new RomanNumeralConverter)->toRomanNumerals(100));
     }
