@@ -15,14 +15,5 @@ final class RomanNumeralConverter
         }
 
         return str_repeat('I', $arabicNumber);
-        if($arabicNumber == 3) {
-            return 'III';
-        }
-
-        if($arabicNumber == 2) {
-            return 'II';
-        }
-
-        return 'I';
     }
 }
