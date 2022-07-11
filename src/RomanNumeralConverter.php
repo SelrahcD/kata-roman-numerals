@@ -42,7 +42,7 @@ final class RomanNumeralConverter
                 $arabicNumber = $arabicNumber - 400;
                 $result .= 'CD';
             }
-            elseif ($arabicNumber === 900) {
+            elseif ($arabicNumber === 900 && $arabicNumber <= 1000) {
                 $arabicNumber = $arabicNumber - 900;
                 $result .= 'CM';
             }
