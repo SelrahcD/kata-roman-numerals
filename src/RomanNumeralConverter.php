@@ -10,35 +10,43 @@ final class RomanNumeralConverter
     public function toRomanNumerals(int $arabicNumber)
     {
         $result = '';
-        
+
         if($arabicNumber == 1000) {
-            return 'M';
+            $result .= 'M';
+            return $result;
         }
 
         if($arabicNumber == 500) {
-            return 'D';
+            $result .= 'D';
+            return $result;
         }
 
         if($arabicNumber == 100) {
-            return 'C';
+            $result .= 'C';
+            return $result;
         }
 
         if($arabicNumber == 50) {
-            return 'L';
+            $result .= 'L';
+            return $result;
         }
 
         if($arabicNumber == 10) {
-            return 'X';
+            $result .= 'X';
+            return $result;
         }
 
         if($arabicNumber == 5) {
-            return 'V';
+            $result .= 'V';
+            return $result;
         }
 
         if($arabicNumber == 6) {
-            return 'VI';
+            $result .= 'VI';
+            return $result;
         }
 
-        return str_repeat('I', $arabicNumber);
+        $result .= str_repeat('I', $arabicNumber);
+        return $result;
     }
 }
