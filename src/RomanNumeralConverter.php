@@ -13,12 +13,12 @@ final class RomanNumeralConverter
 
         if($arabicNumber >= 1000) {
             $result .= 'M';
-            return $result;
+            $arabicNumber = $arabicNumber - 1000;
         }
 
         if($arabicNumber >= 500) {
             $result .= 'D';
-            return $result;
+            $arabicNumber = $arabicNumber - 500;
         }
 
         if($arabicNumber >= 100) {
