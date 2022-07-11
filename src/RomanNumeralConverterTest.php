@@ -11,7 +11,6 @@ final class RomanNumeralConverterTest extends TestCase
     /**
      * @test
      * @dataProvider numbers
-     * @return void
      */
     public function converts_from_arabic_numbers_to_roman_numeral(string $roman, int $arabicNumber): void
     {
