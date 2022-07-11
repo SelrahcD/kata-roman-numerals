@@ -23,12 +23,6 @@ final class RomanNumeralConverter
             $arabicNumber = $arabicNumber - $arabic * $repetition;
         }
 
-        if($arabicNumber >= 50) {
-            $repetition = intdiv($arabicNumber, 50);
-            $result .= str_repeat('L', $repetition);
-            $arabicNumber = $arabicNumber - 50 * $repetition;
-        }
-
         if($arabicNumber >= 10) {
             $repetition = intdiv($arabicNumber, 10);
             $result .= str_repeat('X', $repetition);
