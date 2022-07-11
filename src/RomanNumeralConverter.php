@@ -11,22 +11,22 @@ final class RomanNumeralConverter
     {
         $result = '';
 
-        if($arabicNumber == 1000) {
+        if($arabicNumber >= 1000) {
             $result .= 'M';
             return $result;
         }
 
-        if($arabicNumber == 500) {
+        if($arabicNumber >= 500) {
             $result .= 'D';
             return $result;
         }
 
-        if($arabicNumber == 100) {
+        if($arabicNumber >= 100) {
             $result .= 'C';
             return $result;
         }
 
-        if($arabicNumber == 50) {
+        if($arabicNumber >= 50) {
             $result .= 'L';
             return $result;
         }
