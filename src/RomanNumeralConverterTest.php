@@ -68,6 +68,13 @@ final class RomanNumeralConverterTest extends TestCase
     /**
      * @test
      */
+    public function convert_20_to_XX(): void {
+        $this->assertEquals('XI', (new RomanNumeralConverter)->toRomanNumerals(11));
+    }
+
+    /**
+     * @test
+     */
     public function convert_12_to_XII(): void {
         $this->assertEquals('XII', (new RomanNumeralConverter)->toRomanNumerals(12));
     }
