@@ -45,6 +45,7 @@ final class RomanNumeralConverterTest extends TestCase
             "C <=> 100" => ['C', 100],
             "CXV <=> 115" => ['CXV', 115],
             "CC <=> 200" => ['CC', 200],
+            "CD <=> 400" => ['CD', 400],
             "D <=> 500" => ['D', 500],
             "DC <=> 600" => ['DC', 600],
             "M <=> 1000" => ['M', 1000],

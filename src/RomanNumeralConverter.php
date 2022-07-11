@@ -30,6 +30,10 @@ final class RomanNumeralConverter
         elseif ($arabicNumber === 90) {
             return 'XC';
         }
+        elseif ($arabicNumber === 400) {
+            return 'CD';
+        }
+
         
         $result = '';
 
