@@ -13,6 +13,7 @@ final class RomanNumeralConverter
         50 => 'L',
         10 => 'X',
         5 => 'V',
+        1 => 'I',
     ];
 
     public function toRomanNumerals(int $arabicNumber)
@@ -24,7 +25,7 @@ final class RomanNumeralConverter
             $result .= str_repeat($numeral, $repetition);
             $arabicNumber = $arabicNumber - $arabic * $repetition;
         }
-        
+
 
         if($arabicNumber >= 1) {
             $repetition = intdiv($arabicNumber, 1);
