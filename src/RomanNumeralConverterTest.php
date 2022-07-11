@@ -9,6 +9,15 @@ use PHPUnit\Framework\TestCase;
 final class RomanNumeralConverterTest extends TestCase
 {
 
+
+    /**
+    * @test
+    * @dataProvider numbers
+    */
+    public function converts_from_arabic_numbers_to_roman_numerals(int $arabic, string $roman): void {
+        $this->assertEquals($roman, (new RomanNumeralConverter)->toRomanNumerals($arabic));
+    }
+
     /**
     * @test
     */
@@ -162,5 +171,12 @@ final class RomanNumeralConverterTest extends TestCase
     public function convert_1000_to_M(): void {
         $this->assertEquals('M', (new RomanNumeralConverter)->toRomanNumerals(1000));
     }
-    
+
+    public function numbers()
+    {
+        return [
+            '1 <=> I' => [1, 'I'],
+        ];
+    }
+
 }
