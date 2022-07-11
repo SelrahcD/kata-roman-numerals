@@ -27,6 +27,9 @@ final class RomanNumeralConverter
         elseif ($arabicNumber === 40) {
             return 'XL';
         }
+        elseif ($arabicNumber === 90) {
+            return 'XC';
+        }
         
         $result = '';
 
