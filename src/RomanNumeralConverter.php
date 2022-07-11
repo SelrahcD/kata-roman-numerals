@@ -6,6 +6,9 @@ namespace RomanNumerals;
 
 final class RomanNumeralConverter
 {
+    const ARABIC_TO_ROMAN = [
+        1000 => 'M',
+    ];
 
     public function toRomanNumerals(int $arabicNumber)
     {
