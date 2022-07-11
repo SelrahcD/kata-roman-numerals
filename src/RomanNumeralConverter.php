@@ -22,28 +22,27 @@ final class RomanNumeralConverter
 
         foreach (self::ARABIC_TO_ROMAN AS $arabic => $numeral) {
 
-            if($arabicNumber >= 4 && $arabicNumber < 5) {
-//                echo $this->smallerDivision($arabicNumber);
+            if($arabicNumber >= 4 && $arabicNumber < 5) { // 5 1
                 $arabicNumber = $arabicNumber - 4;
                 $result .= 'IV';
             }
-            elseif ($arabicNumber >= 9 && $arabicNumber < 10) {
+            elseif ($arabicNumber >= 9 && $arabicNumber < 10) { // 10 1
                 $arabicNumber = $arabicNumber - 9;
                 $result .= 'IX';
             }
-            elseif ($arabicNumber >= 40 && $arabicNumber < 50) {
+            elseif ($arabicNumber >= 40 && $arabicNumber < 50) { // 50 10
                 $arabicNumber = $arabicNumber - 40;
                 $result .= 'XL';
             }
-            elseif ($arabicNumber >= 90 && $arabicNumber < 100) {
+            elseif ($arabicNumber >= 90 && $arabicNumber < 100) { // 100 10
                 $arabicNumber = $arabicNumber - 90;
                 $result .= 'XC';
             }
-            elseif ($arabicNumber >= 400 && $arabicNumber < 500) {
+            elseif ($arabicNumber >= 400 && $arabicNumber < 500) { // 500 100
                 $arabicNumber = $arabicNumber - 400;
                 $result .= 'CD';
             }
-            elseif ($arabicNumber >= 900 && $arabicNumber < 1000) {
+            elseif ($arabicNumber >= 900 && $arabicNumber < 1000) { // 1000 100
                 $arabicNumber = $arabicNumber - 900;
                 $result .= 'CM';
             }
@@ -54,19 +53,5 @@ final class RomanNumeralConverter
         }
         
         return $result;
-    }
-
-    private function smallerDivision(int $currentDivision): int
-    {
-        $arabicToRoman = self::ARABIC_TO_ROMAN;
-        asort($arabicToRoman);
-
-        foreach ($arabicToRoman as $arabic => $roman) {
-            if($currentDivision === $arabic) {
-                return $previousDivision;
-            }
-
-            $previousDivision = $arabic;
-        }
     }
 }
