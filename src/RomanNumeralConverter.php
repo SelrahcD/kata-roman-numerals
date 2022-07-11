@@ -22,27 +22,27 @@ final class RomanNumeralConverter
 
         foreach (self::ARABIC_TO_ROMAN AS $arabic => $numeral) {
 
-            if($arabicNumber >= 4 && $arabicNumber < 5) { // 5 1
+            if($arabicNumber >= 4 && $arabicNumber < 5) { // 5 1 -> 5 % 4 => 1 && 5 - 4 = 1
                 $arabicNumber = $arabicNumber - 4;
                 $result .= 'IV';
             }
-            elseif ($arabicNumber >= 9 && $arabicNumber < 10) { // 10 1
+            elseif ($arabicNumber >= 9 && $arabicNumber < 10) { // 10 1 -> 10 % 9 => 1 && 10 - 9 = 1
                 $arabicNumber = $arabicNumber - 9;
                 $result .= 'IX';
             }
-            elseif ($arabicNumber >= 40 && $arabicNumber < 50) { // 50 10
+            elseif ($arabicNumber >= 40 && $arabicNumber < 50) { // 50 10 -> 50 % 40 -> 10 && 50 - 10 = 40
                 $arabicNumber = $arabicNumber - 40;
                 $result .= 'XL';
             }
-            elseif ($arabicNumber >= 90 && $arabicNumber < 100) { // 100 10
+            elseif ($arabicNumber >= 90 && $arabicNumber < 100) { // 100 10 -> 100 % 90 -> 10 && 100 - 90 = 10
                 $arabicNumber = $arabicNumber - 90;
                 $result .= 'XC';
             }
-            elseif ($arabicNumber >= 400 && $arabicNumber < 500) { // 500 100
+            elseif ($arabicNumber >= 400 && $arabicNumber < 500) { // 500 100 -> 500 % 400 -> 100 && 500 - 400 = 100
                 $arabicNumber = $arabicNumber - 400;
                 $result .= 'CD';
             }
-            elseif ($arabicNumber >= 900 && $arabicNumber < 1000) { // 1000 100
+            elseif ($arabicNumber >= 900 && $arabicNumber < 1000) { // 1000 100 -> 1000 % 900 -> 100 && 1000 - 900 = 100
                 $arabicNumber = $arabicNumber - 900;
                 $result .= 'CM';
             }
