@@ -24,12 +24,7 @@ final class RomanNumeralConverter
             $result .= str_repeat($numeral, $repetition);
             $arabicNumber = $arabicNumber - $arabic * $repetition;
         }
-
-        if($arabicNumber >= 5) {
-            $repetition = intdiv($arabicNumber, 5);
-            $result .= str_repeat('V', $repetition);
-            $arabicNumber = $arabicNumber - 5 * $repetition;
-        }
+        
 
         if($arabicNumber >= 1) {
             $repetition = intdiv($arabicNumber, 1);
