@@ -20,6 +20,6 @@ final class RomanNumeralConverterTest extends TestCase
      * @test
      */
     public function convert_2_to_II(): void {
-        $this->assertEquals('I', (new RomanNumeralConverter)->toRomanNumerals(1));
+        $this->assertEquals('II', (new RomanNumeralConverter)->toRomanNumerals(2));
     }
 }

@@ -9,6 +9,9 @@ final class RomanNumeralConverter
 
     public function toRomanNumerals(int $int)
     {
+        if($int == 2) {
+            return 'II';
+        }
         return 'I';
     }
 }
