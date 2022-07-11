@@ -31,10 +31,6 @@ final class RomanNumeralConverter
             $arabicNumber = $arabicNumber - 50;
         }
 
-        if($arabicNumber == 20) {
-           return "XX";
-        }
-
         if($arabicNumber >= 10) {
             $repetition = intdiv($arabicNumber, 10);
             $result .= str_repeat('X', $repetition);
