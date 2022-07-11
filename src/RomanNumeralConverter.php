@@ -20,14 +20,7 @@ final class RomanNumeralConverter
     {
         $result = '';
 
-        $previousRomanNumeral = null;
-        $previousArabicNumber = null;
         foreach (self::ARABIC_TO_ROMAN AS $arabic => $numeral) {
-
-            if($arabicNumber >= ($arabic - $previousArabicNumber) && $arabicNumber < $arabic) {
-                echo $previousArabicNumber . PHP_EOL;
-                echo $arabic . PHP_EOL;
-            }
 
             if($arabicNumber >= 4 && $arabicNumber < 5) {
                 $arabicNumber = $arabicNumber - 4;
@@ -57,9 +50,6 @@ final class RomanNumeralConverter
             $repetition = intdiv($arabicNumber, $arabic);
             $result .= str_repeat($numeral, $repetition);
             $arabicNumber = $arabicNumber - $arabic * $repetition;
-
-            $previousRomanNumeral = $numeral;
-            $previousArabicNumber = $arabic;
         }
         
         return $result;
