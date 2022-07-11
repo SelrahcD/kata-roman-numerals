@@ -15,4 +15,11 @@ final class RomanNumeralConverterTest extends TestCase
     public function convert_1_to_I(): void {
         $this->assertEquals('I', (new RomanNumeralConverter)->toRomanNumerals(1));
     }
+
+    /**
+     * @test
+     */
+    public function convert_2_to_II(): void {
+        $this->assertEquals('I', (new RomanNumeralConverter)->toRomanNumerals(1));
+    }
 }
