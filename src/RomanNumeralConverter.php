@@ -18,29 +18,29 @@ final class RomanNumeralConverter
 
     public function toRomanNumerals(int $arabicNumber)
     {
-        if($arabicNumber === 4) {
-            return 'IV';
-        }
-        elseif ($arabicNumber === 9) {
-            return 'IX';
-        }
-        elseif ($arabicNumber === 40) {
-            return 'XL';
-        }
-        elseif ($arabicNumber === 90) {
-            return 'XC';
-        }
-        elseif ($arabicNumber === 400) {
-            return 'CD';
-        }
-        elseif ($arabicNumber === 900) {
-            return 'CM';
-        }
-
-        
         $result = '';
 
         foreach (self::ARABIC_TO_ROMAN AS $arabic => $numeral) {
+
+            if($arabicNumber === 4) {
+                return 'IV';
+            }
+            elseif ($arabicNumber === 9) {
+                return 'IX';
+            }
+            elseif ($arabicNumber === 40) {
+                return 'XL';
+            }
+            elseif ($arabicNumber === 90) {
+                return 'XC';
+            }
+            elseif ($arabicNumber === 400) {
+                return 'CD';
+            }
+            elseif ($arabicNumber === 900) {
+                return 'CM';
+            }
+            
             $repetition = intdiv($arabicNumber, $arabic);
             $result .= str_repeat($numeral, $repetition);
             $arabicNumber = $arabicNumber - $arabic * $repetition;
