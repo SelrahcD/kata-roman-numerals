@@ -48,6 +48,6 @@ final class RomanNumeralConverterTest extends TestCase
      * @test
      */
     public function convert_50_to_L(): void {
-        $this->assertEquals('X', (new RomanNumeralConverter)->toRomanNumerals(10));
+        $this->assertEquals('L', (new RomanNumeralConverter)->toRomanNumerals(50));
     }
 }
