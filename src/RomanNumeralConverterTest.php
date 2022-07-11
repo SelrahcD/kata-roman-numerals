@@ -37,6 +37,7 @@ final class RomanNumeralConverterTest extends TestCase
             "L <=> 50" => ['L', 50],
             "LI <=> 51" => ['LI', 51],
             "LX <=> 60" => ['LX', 60],
+            "LXX <=> 70" => ['LXX', 70],
             "C <=> 100" => ['C', 100],
             "CXV <=> 115" => ['CXV', 115],
             "D <=> 500" => ['D', 500],
