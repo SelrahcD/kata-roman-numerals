@@ -19,12 +19,7 @@ final class RomanNumeralConverter
             $result .= str_repeat($numeral, $repetition);
             $arabicNumber = $arabicNumber - 1000 * $repetition;
         }
-
-        if($arabicNumber >= 1000) {
-            $repetition = intdiv($arabicNumber, 1000);
-            $result .= str_repeat('M', $repetition);
-            $arabicNumber = $arabicNumber - 1000 * $repetition;
-        }
+        
 
         if($arabicNumber >= 500) {
             $repetition = intdiv($arabicNumber, 500);
