@@ -13,6 +13,7 @@ final class RomanNumeralConverter
         50 => 'L',
         10 => 'X',
         5 => 'V',
+        4 => 'IV',
         1 => 'I',
     ];
 
@@ -30,7 +31,7 @@ final class RomanNumeralConverter
                 $arabicNumber = $arabicNumber - 4;
                 $result .= 'IV';
             }
-            elseif ($arabicNumber >= 9 && $arabicNumber < 10) { // 10 1 -> 10 % 9 => 1 && 10 - 9 = 1
+            if ($arabicNumber >= 9 && $arabicNumber < 10) { // 10 1 -> 10 % 9 => 1 && 10 - 9 = 1
                 $arabicNumber = $arabicNumber - 9;
                 $result .= 'IX';
             }
