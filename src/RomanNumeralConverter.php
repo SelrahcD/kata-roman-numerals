@@ -32,7 +32,7 @@ final class RomanNumeralConverter
         }
 
         if($arabicNumber >= 10) {
-            $modulo = $arabicNumber % 10;
+            $repetition = $arabicNumber % 10 + 1;
             $result .= 'X';
             $arabicNumber = $arabicNumber - 10;
         }
