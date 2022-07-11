@@ -37,7 +37,7 @@ final class RomanNumeralConverter
 
         if($arabicNumber >= 10) {
             $repetition = intdiv($arabicNumber, 10);
-            $result .= 'X';
+            $result .= str_repeat('X', $repetition);
             $arabicNumber = $arabicNumber - 10;
             var_dump($arabicNumber);
         }
