@@ -22,7 +22,7 @@ final class RomanNumeralConverter
 
         foreach (self::ARABIC_TO_ROMAN AS $arabic => $numeral) {
             
-            if($arabicNumber > 1 && $arabicNumber < 5 && $arabicNumber / 1 > 3) {
+            if($arabicNumber < 5 && $arabicNumber / 1 > 3) {
                 echo  $arabicNumber / 1 ;
                 echo fmod($arabicNumber, 1);
                 echo $arabicNumber % 1;
