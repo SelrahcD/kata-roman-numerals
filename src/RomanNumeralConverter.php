@@ -25,7 +25,7 @@ final class RomanNumeralConverter
             if($arabicNumber === 4) {
                 return 'IV';
             }
-            elseif ($arabicNumber < 10 && $arabicNumber / 1 > 6 && fmod($arabicNumber, 5) == 4) {
+            elseif ($arabicNumber === 9) {
                 return 'IX';
             }
             elseif ($arabicNumber === 40) {
