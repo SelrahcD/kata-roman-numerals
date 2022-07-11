@@ -24,27 +24,27 @@ final class RomanNumeralConverter
             
             if($arabicNumber === 4) {
                 $arabicNumber = $arabicNumber - 4;
-                return 'IV';
+                $result .= 'IV';
             }
             elseif ($arabicNumber === 9) {
                 $arabicNumber = $arabicNumber - 9;
-                return 'IX';
+                $result .= 'IX';
             }
             elseif ($arabicNumber === 40) {
                 $arabicNumber = $arabicNumber - 40;
-                return 'XL';
+                $result .= 'XL';
             }
             elseif ($arabicNumber === 90) {
                 $arabicNumber = $arabicNumber - 90;
-                return 'XC';
+                $result .= 'XC';
             }
             elseif ($arabicNumber === 400) {
                 $arabicNumber = $arabicNumber - 400;
-                return 'CD';
+                $result .= 'CD';
             }
             elseif ($arabicNumber === 900) {
                 $arabicNumber = $arabicNumber - 900;
-                return 'CM';
+                $result .= 'CM';
             }
             
             $repetition = intdiv($arabicNumber, $arabic);
