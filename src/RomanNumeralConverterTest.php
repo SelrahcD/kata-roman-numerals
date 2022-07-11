@@ -57,4 +57,11 @@ final class RomanNumeralConverterTest extends TestCase
     public function convert_100_to_C(): void {
         $this->assertEquals('C', (new RomanNumeralConverter)->toRomanNumerals(100));
     }
+
+    /**
+     * @test
+     */
+    public function convert_500_to_D(): void {
+        $this->assertEquals('D', (new RomanNumeralConverter)->toRomanNumerals(500));
+    }
 }
