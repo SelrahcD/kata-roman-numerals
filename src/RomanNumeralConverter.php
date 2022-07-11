@@ -9,6 +9,10 @@ final class RomanNumeralConverter
 
     public function toRomanNumerals(int $arabicNumber)
     {
+        if($arabicNumber == 1000) {
+            return 'M';
+        }
+
         if($arabicNumber == 500) {
             return 'D';
         }
