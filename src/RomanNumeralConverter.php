@@ -24,7 +24,7 @@ final class RomanNumeralConverter
         $previousArabicNumber = null;
         foreach (self::ARABIC_TO_ROMAN AS $arabic => $numeral) {
 
-            if($arabicNumber >= $arabic - $previousArabicNumber && $arabicNumber < $arabic) {
+            if($arabicNumber >= ($arabic - $previousArabicNumber) && $arabicNumber < $arabic) {
                 echo $arabic . PHP_EOL;
             }
 
