@@ -27,10 +27,6 @@ final class RomanNumeralConverter
                 echo $arabicNumber . PHP_EOL;
             }
 
-            if($arabicNumber >= 4 && $arabicNumber < 5) { // 5 1 -> 5 % 4 => 1 && 5 - 4 = 1
-                $arabicNumber = $arabicNumber - 4;
-                $result .= 'IV';
-            }
             if ($arabicNumber >= 9 && $arabicNumber < 10) { // 10 1 -> 10 % 9 => 1 && 10 - 9 = 1
                 $arabicNumber = $arabicNumber - 9;
                 $result .= 'IX';
