@@ -7,11 +7,12 @@ namespace RomanNumerals;
 final class RomanNumeralConverter
 {
 
-    public function toRomanNumerals(int $int)
+    public function toRomanNumerals(int $arabicNumber)
     {
-        if($int == 2) {
+        if($arabicNumber == 2) {
             return 'II';
         }
+
         return 'I';
     }
 }
