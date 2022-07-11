@@ -27,18 +27,23 @@ final class RomanNumeralConverter
                 return 'IV';
             }
             elseif ($arabicNumber === 9) {
+                $arabicNumber = $arabicNumber - 9;
                 return 'IX';
             }
             elseif ($arabicNumber === 40) {
+                $arabicNumber = $arabicNumber - 40;
                 return 'XL';
             }
             elseif ($arabicNumber === 90) {
+                $arabicNumber = $arabicNumber - 90;
                 return 'XC';
             }
             elseif ($arabicNumber === 400) {
+                $arabicNumber = $arabicNumber - 400;
                 return 'CD';
             }
             elseif ($arabicNumber === 900) {
+                $arabicNumber = $arabicNumber - 900;
                 return 'CM';
             }
             
