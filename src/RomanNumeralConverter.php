@@ -9,6 +9,11 @@ final class RomanNumeralConverter
 
     public function toRomanNumerals(int $arabicNumber)
     {
+
+        if($arabicNumber == 5) {
+            return 'V';
+        }
+
         if($arabicNumber == 3) {
             return 'III';
         }
