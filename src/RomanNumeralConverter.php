@@ -7,7 +7,7 @@ namespace RomanNumerals;
 final class RomanNumeralConverter
 {
 
-    public function toRomanNumerals(int $int)
+    public function toRomanNumerals(int $arabicNumber)
     {
         return 'I';
     }
