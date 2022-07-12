@@ -30,6 +30,7 @@ final class RomanNumeralConverterTest extends TestCase
             ['IX', 9],
             ['X', 10],
             ['XV', 15],
+            ['XX', 20],
         ];
 
         return array_reduce($data, function (array $result, $datum) {
