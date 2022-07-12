@@ -52,4 +52,12 @@ final class RomanNumeralConverterTest extends TestCase
     }
 
 
+    /**
+     * @test
+     */
+    public function convert_8_to_VIII(): void {
+        $this->assertEquals('VIII', (new RomanNumeralConverter)->toRomanNumerals(8));
+    }
+
+
 }
