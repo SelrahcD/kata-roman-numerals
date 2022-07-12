@@ -18,12 +18,12 @@ final class RomanNumeralConverter
             return 'V';
         }
 
-        $allAs1 = str_repeat('I', $arabicNumber);
+        $result = str_repeat('I', $arabicNumber);
 
         foreach (self::MAPPING as $repetition => $replacement) {}
 
 
 
-        return str_replace(str_repeat('I', 4), 'IV', $allAs1);
+        return str_replace(str_repeat('I', 4), 'IV', $result);
     }
 }
