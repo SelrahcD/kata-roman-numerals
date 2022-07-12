@@ -22,6 +22,7 @@ final class RomanNumeralConverter
 
         foreach (self::MAPPING as $repetition => $replacement) {
             $a = str_replace(str_repeat('I', $repetition), $replacement, $result);
+            echo $a;
         }
 
 
