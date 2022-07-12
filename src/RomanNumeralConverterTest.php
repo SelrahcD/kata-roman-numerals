@@ -14,7 +14,7 @@ final class RomanNumeralConverterTest extends TestCase
      */
     public function convert_1_to_I(): void
     {
-        $this->assertConversion('I', 1);
+        $this->assert_numbers_are_converted('I', 1);
     }
 
     /**
@@ -22,7 +22,7 @@ final class RomanNumeralConverterTest extends TestCase
      */
     public function convert_2_to_II(): void
     {
-        $this->assertConversion('II', 2);
+        $this->assert_numbers_are_converted('II', 2);
     }
 
     /**
@@ -30,7 +30,7 @@ final class RomanNumeralConverterTest extends TestCase
      */
     public function convert_3_to_III(): void
     {
-        $this->assertConversion('III', 3);
+        $this->assert_numbers_are_converted('III', 3);
     }
 
     /**
@@ -38,7 +38,7 @@ final class RomanNumeralConverterTest extends TestCase
      */
     public function convert_4_to_IV(): void
     {
-        $this->assertConversion('IV', 4);
+        $this->assert_numbers_are_converted('IV', 4);
     }
 
     /**
@@ -46,7 +46,7 @@ final class RomanNumeralConverterTest extends TestCase
      */
     public function convert_5_to_V(): void
     {
-        $this->assertConversion('V', 5);
+        $this->assert_numbers_are_converted('V', 5);
     }
 
     /**
@@ -54,7 +54,7 @@ final class RomanNumeralConverterTest extends TestCase
      */
     public function convert_6_to_VI(): void
     {
-        $this->assertConversion('VI', 6);
+        $this->assert_numbers_are_converted('VI', 6);
     }
 
 
@@ -63,7 +63,7 @@ final class RomanNumeralConverterTest extends TestCase
      */
     public function convert_8_to_VIII(): void
     {
-        $this->assertConversion('VIII', 8);
+        $this->assert_numbers_are_converted('VIII', 8);
     }
 
     /**
@@ -71,14 +71,14 @@ final class RomanNumeralConverterTest extends TestCase
      */
     public function convert_9_to_IX(): void
     {
-        $this->assertConversion('IX', 9);
+        $this->assert_numbers_are_converted('IX', 9);
     }
 
     /**
      * @test
      * @dataProvider numbers
      */
-    public function assertConversion(string $romanNumeral, int $arabicNumber): void
+    public function assert_numbers_are_converted(string $romanNumeral, int $arabicNumber): void
     {
         $this->assertEquals($romanNumeral, (new RomanNumeralConverter)->toRomanNumerals($arabicNumber));
     }
