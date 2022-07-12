@@ -31,6 +31,7 @@ final class RomanNumeralConverterTest extends TestCase
             ['X', 10],
             ['XV', 15],
             ['XX', 20],
+            ['XL', 40],
             ['L', 50],
             ['LV', 55],
             ['LX', 60],
