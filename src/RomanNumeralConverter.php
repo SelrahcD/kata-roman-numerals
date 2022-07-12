@@ -9,9 +9,9 @@ final class RomanNumeralConverter
 
     public function toRomanNumerals(int $arabicNumber): string
     {
-        if($arabicNumber == 2) {
-            return 'II';
-        }
+//        if($arabicNumber == 2) {
+//            return 'II';
+//        }
 
         return str_repeat('I', $arabicNumber);
     }
