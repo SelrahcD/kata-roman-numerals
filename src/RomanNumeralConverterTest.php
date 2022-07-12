@@ -59,5 +59,12 @@ final class RomanNumeralConverterTest extends TestCase
         $this->assertEquals('VIII', (new RomanNumeralConverter)->toRomanNumerals(8));
     }
 
+    /**
+     * @test
+     */
+    public function convert_9_to_IX(): void {
+        $this->assertEquals('IX', (new RomanNumeralConverter)->toRomanNumerals(9));
+    }
+
 
 }
