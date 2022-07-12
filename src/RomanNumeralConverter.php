@@ -20,11 +20,6 @@ final class RomanNumeralConverter
 
     public function toRomanNumerals(int $arabicNumber): string
     {
-
-        if($arabicNumber === 5) {
-            return 'V';
-        }
-
         $result = str_repeat('I', $arabicNumber);
 
         foreach (self::MAPPING as $repetition => $replacement) {
