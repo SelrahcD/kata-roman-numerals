@@ -19,6 +19,8 @@ final class RomanNumeralConverter
 
         $allAs1 = str_repeat('I', $arabicNumber);
 
+        str_replace('IIII', 'IV', $allAs1);
+        
         return $allAs1;
     }
 }
