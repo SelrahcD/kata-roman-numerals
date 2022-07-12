@@ -1,5 +1,7 @@
 # RomanNumerals
 
+[Kata description](https://codingdojo.org/kata/RomanNumerals/)
+
 ## Getting started
 
 Run `composer install` to get dependencies.
