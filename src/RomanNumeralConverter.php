@@ -21,9 +21,10 @@ final class RomanNumeralConverter
         $result = str_repeat('I', $arabicNumber);
 
         foreach (self::MAPPING as $repetition => $replacement) {
-            $a = str_replace(str_repeat('I', $repetition), $replacement, $result);
-            echo $a;
+            $result = str_replace(str_repeat('I', $repetition), $replacement, $result);
         }
+
+        return $result;
 
 
 
