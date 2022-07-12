@@ -8,6 +8,7 @@ final class RomanNumeralConverter
 {
     private const MAPPING = [
         1000 => 'M',
+        900 => 'CM',
         500 => 'D',
         100 => 'C',
         90 => 'XC',
