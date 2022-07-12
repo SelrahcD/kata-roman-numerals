@@ -98,7 +98,10 @@ final class RomanNumeralConverterTest extends TestCase
         ];
 
         return array_reduce($data, function (array $result, $datum) {
-     });
+            [$romanNumeral, $arabicNumber] = $datum;
+            $result[$romanNumeral . " <=> " . $arabicNumber] = $datum;
+     }, []);
+        
     }
 
 
