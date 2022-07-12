@@ -7,6 +7,7 @@ namespace RomanNumerals;
 final class RomanNumeralConverter
 {
     private const MAPPING = [
+        50 => 'L',
         10 => 'X',
         9 => 'IX',
         5 => 'V',
