@@ -12,10 +12,6 @@ final class RomanNumeralConverter
 
     public function toRomanNumerals(int $arabicNumber): string
     {
-        if($arabicNumber == 4) {
-            return 'IV';
-        }
-
 
         $allAs1 = str_repeat('I', $arabicNumber);
 
