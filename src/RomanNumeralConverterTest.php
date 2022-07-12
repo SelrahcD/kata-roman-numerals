@@ -42,6 +42,7 @@ final class RomanNumeralConverterTest extends TestCase
             ['MCMIII', 1903],
             ['MMM', 3000],
             ['MMMCM', 3900],
+            ['MMMCMXC', 3990],
         ];
 
         return array_reduce($data, function (array $result, $datum) {
