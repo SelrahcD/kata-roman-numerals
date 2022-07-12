@@ -12,7 +12,7 @@ final class RomanNumeralConverter
         if($arabicNumber == 2) {
             return 'II';
         }
-        
-        return 'I';
+
+        return str_repeat('I', $arabicNumber);
     }
 }
