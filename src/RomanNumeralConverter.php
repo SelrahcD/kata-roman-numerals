@@ -8,7 +8,7 @@ final class RomanNumeralConverter
 {
     private const MAPPING = [
         4 => 'IV',
-        5 => 'V'
+        5 => 'V',
     ];
 
     public function toRomanNumerals(int $arabicNumber): string
