@@ -75,11 +75,10 @@ final class RomanNumeralConverterTest extends TestCase
     }
 
     /**
-     * @param string $romanNumeral
-     * @param int $arabicNumber
-     * @return void
+     * @test
+     * @dataProvider numbers
      */
-    private function assertConversion(string $romanNumeral, int $arabicNumber): void
+    public function assertConversion(string $romanNumeral, int $arabicNumber): void
     {
         $this->assertEquals($romanNumeral, (new RomanNumeralConverter)->toRomanNumerals($arabicNumber));
     }
@@ -100,8 +99,9 @@ final class RomanNumeralConverterTest extends TestCase
         return array_reduce($data, function (array $result, $datum) {
             [$romanNumeral, $arabicNumber] = $datum;
             $result[$romanNumeral . " <=> " . $arabicNumber] = $datum;
-     }, []);
-        
+
+            return $result;
+        }, []);
     }
 
 
