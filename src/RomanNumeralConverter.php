@@ -25,9 +25,5 @@ final class RomanNumeralConverter
         }
 
         return $result;
-
-
-
-        return str_replace(str_repeat('I', 4), 'IV', $result);
     }
 }
