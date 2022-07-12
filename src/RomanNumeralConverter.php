@@ -16,6 +16,9 @@ final class RomanNumeralConverter
             return 'IV';
         }
 
-        return str_repeat('I', $arabicNumber);
+
+        $allAs1 = str_repeat('I', $arabicNumber);
+
+        return $allAs1;
     }
 }
